@@ -15,9 +15,16 @@
 		/>
 		<!---->
 
+		<!-- FONTAWESOME CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<!---->
+
 		<!-- CUSTOM CSS-->
 		<link
-			res="stylesheet"
+			rel="stylesheet"
 			href="styles/global.css"
 		/>
 		<!---->
@@ -33,7 +40,60 @@
 			id="main"
 		>
 			<!-- APP TITLE -->
-			<h1 class="display-2">Simple TODO</h1>
+			<h1 class="display-2 m-5">Simple TODO</h1>
+			<!---->
+
+			<!-- TASK LIST -->
+			<div class="card m-lg-5">
+				<!-- HEADING -->
+				<div class="card-header display-6">Tasks</div>
+				<!---->
+
+				<!-- TASKS -->
+				<ul
+					class="list-group list-group-flush"
+					id="task-list"
+				>
+					<!-- A SINGLE TASK -->
+					<li class="list-group-item task-item">
+						<div class="row">
+							<!-- DONE CHECKBOX -->
+							<div class="col-1 p-2 p-lg-3">
+								<input
+									class="form-check-input task-control"
+									type="checkbox"
+									value=""
+									id="flexCheckChecked"
+								/>
+							</div>
+							<!---->
+
+							<!-- PADDING -->
+							<div class="col-1"></div>
+							<!---->
+
+							<!-- TASK CONTENT -->
+							<div class="col-8 m-auto">
+								<h3 class="task-content"></h3>
+							</div>
+							<!---->
+
+							<!-- EDIT TASK -->
+							<div class="col-1 p-2 p-lg-3">
+								<a class="fa fa-edit task-control"> </a>
+							</div>
+							<!---->
+
+							<!-- DELETE TASK -->
+							<div class="col-1 p-2 p-lg-3">
+								<a class="fa fa-trash task-control"> </a>
+							</div>
+							<!---->
+						</div>
+					</li>
+				</ul>
+				<!---->
+			</div>
 			<!---->
 		</div>
 		<!---->
